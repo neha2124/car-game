@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <style>
+        *{
+
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+           
+            background-color: #000000cf;
+            color: aliceblue;
+        }
+        h1{
+           
+    text-shadow: 4px 3px 20px rgb(233 227 227);
+    /* margin: auto; */
+    position: absolute;
+    top: 40vh;
+    left: 38vw;
+    font-size: 6.4rem;
+}
+ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(15, 16, 15);
+}
+li{
+    list-style: none;
+    font-size: 20px;
+    text-transform: capitalize;
+
+}li a i{
+    font-size: 40px;
+} 
+        
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>player <span id="player"></span></li>
+            <li> score <span id="score"></span></li>
+            <li><a href="#">leader Board</a></li>
+            <li><a href="login.html"><i class="fa-solid fa-user"></i></a></li>
+           
+            
+        </ul>
+     </nav>
+     <h1 class="start">Start game</h1> 
+   <script>
+    function no (){
+        alert("please log in before start a game")
+    }
+    let start = document.querySelector(".start")
+     start.addEventListener("click",no)
+   </script>
+</body>
+
+</html>

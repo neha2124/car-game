@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow: hidden;
+    background-color: rgb(57, 46, 46);
+    color: aliceblue;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtF6Dg4jCOAXU0ifgz7BUyh9VZkZolcdnXwHGWRmuq_A&s);
+    /* border: 1px solid beige; */
+    /* box-shadow: inset 19px 13px 18px 8px #abababf9,5px 5px 24px 1px #DDDDDD;; */
+}
+ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(15, 16, 15);
+}
+li{
+    list-style: none;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+.hide{
+    display: none;
+}
+#start-screen{
+    text-align: center;
+    margin: 30vh auto;
+    color: #f0e7e7d0;
+    font-size: 50px;
+    text-transform: capitalize;
+    text-shadow: 4px 3px 20px rgb(51, 49, 49);
+    
+}
+#game-area{
+    height: 100vh;
+    width: 400px;
+    background-color: #36251f;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+    border-right: 4px dashed blanchedalmond;
+    border-left: 4px dashed blanchedalmond;
+
+}
+.car{
+    /* background-image: url(https://w7.pngwing.com/pngs/360/245/png-transparent-blank-car-game-game-sprite-racing-racing-car-simple-simple-car-sprite-stickers.png); */
+    background-image: url(car.png);
+    height: 100px;
+    width:53px;
+     background-size: contain;
+     background-position: center;
+    background-repeat: no-repeat;
+    /* background: red; */
+    position: absolute;
+   /* transform: rotateX('30deg'); */
+    bottom: 120px;
+}
+.enemy{
+    background-image: url(car.png);
+    height: 100px;
+    width:53px;
+     background-size: contain;
+     background-position: center;
+    background-repeat: no-repeat;
+    /* background: red; */
+    position: absolute;
+   /* transform: rotate(-90deg); */
+    bottom: 120px;
+  
+}
+.line{
+    height:90px;
+    width:10px;
+    background-color: wheat;
+    position:absolute;
+    left:190px;
+    /* top:100px */
+
+}
+.restart{
+    text-align: center;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid beige;
+    background: aliceblue;
+    color: black;
+    position: inherit;
+    margin-top: 24rem;
+}
+.restart button{
+    font-size: inherit;
+    margin: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    color: blanchedalmond;
+    background: black;
+    cursor: pointer;
+}
+/* #score {
+    background-color: #23deff;
+    font-size: 24px;
+    position: absolute;
+    height: 100px;
+    width: 250px;
+    /* align-self: center; */
+    /* line-height: 4;
+    text-align: center;
+    top: 20px;
+    left: 20px;
+    text-transform: capitalize;
+    font-family: cursive;
+} */ 
+/*  */
